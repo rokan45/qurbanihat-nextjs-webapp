@@ -20,6 +20,7 @@ export default function RegisterPage() {
     formState: { errors },
   } = useForm();
 
+  // to handle on form submit
   const onSubmit = async ({ name, email, photoUrl, password }) => {
     setLoading(true);
     const res = await signUp.email({
@@ -29,6 +30,8 @@ export default function RegisterPage() {
       image: photoUrl || undefined,
     });
     setLoading(false);
+
+    // toast and error message
     if (res?.error) {
       toast.error(res.error.message || "Registration failed. Try again.");
     } else {
@@ -46,8 +49,7 @@ export default function RegisterPage() {
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <Link href="/" className="inline-flex items-center gap-2 justify-center">
-            <span className="text-3xl">🐄</span>
-            <span className="font-heading font-bold text-primary text-2xl">QurbaniHat</span>
+            <h2><span className="font-heading font-bold text-primary text-4xl">Qurbani</span> <span className="text-green-600 font-bold text-4xl">Hat</span></h2>
           </Link>
           <h1 className="text-xl font-bold text-gray-900 mt-4">Create an account</h1>
           <p className="text-sm text-gray-500 mt-1">Join thousands of happy customers</p>
@@ -74,7 +76,7 @@ export default function RegisterPage() {
                   pattern: { value: /\S+@\S+\.\S+/, message: "Enter a valid email" },
                 })}
                 className="input-field"
-                placeholder="you@example.com"
+                placeholder="Enter your email here"
               />
               {errors.email && <p className="text-xs text-red-500 mt-1">{errors.email.message}</p>}
             </div>
