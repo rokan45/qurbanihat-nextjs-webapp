@@ -5,10 +5,10 @@ import { signIn } from "@/lib/auth-client";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import toast from "react-hot-toast";
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import { Eye, EyeOff } from "lucide-react";
 
-export default function LoginPage() {
+function LoginForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const redirect = searchParams.get("redirect") || "/";
@@ -41,7 +41,6 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen bg-surface flex items-center justify-center px-4 py-12">
       <div className="w-full max-w-md">
-        {/* Logo */}
         <div className="text-center mb-8">
           <Link href="/" className="inline-flex items-center gap-2 justify-center">
             <span className="text-3xl">🐄</span>
@@ -124,5 +123,13 @@ export default function LoginPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function LoginPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-surface flex items-center justify-center text-gray-400 text-sm">Loading...</div>}>
+      <LoginForm />
+    </Suspense>
   );
 }
