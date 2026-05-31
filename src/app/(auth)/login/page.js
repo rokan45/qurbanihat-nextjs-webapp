@@ -25,6 +25,8 @@ function LoginForm() {
     setLoading(true);
     const res = await signIn.email({ email, password });
     setLoading(false);
+
+    // show error message
     if (res?.error) {
       toast.error(res.error.message || "Invalid email or password.");
     } else {
@@ -34,6 +36,7 @@ function LoginForm() {
     }
   };
 
+  // handle  google authentication
   const handleGoogle = async () => {
     await signIn.social({ provider: "google", callbackURL: redirect });
   };
@@ -43,8 +46,7 @@ function LoginForm() {
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <Link href="/" className="inline-flex items-center gap-2 justify-center">
-            <span className="text-3xl">🐄</span>
-            <span className="font-heading font-bold text-primary text-2xl">QurbaniHat</span>
+            <h2><span className="font-heading font-bold text-primary text-4xl">Qurbani</span> <span className="text-green-600 font-bold text-4xl">Hat</span></h2>
           </Link>
           <h1 className="text-xl font-bold text-gray-900 mt-4">Welcome back</h1>
           <p className="text-sm text-gray-500 mt-1">Sign in to your account</p>
@@ -61,7 +63,7 @@ function LoginForm() {
                   pattern: { value: /\S+@\S+\.\S+/, message: "Enter a valid email" },
                 })}
                 className="input-field"
-                placeholder="you@example.com"
+                placeholder="Enter your email"
               />
               {errors.email && <p className="text-xs text-red-500 mt-1">{errors.email.message}</p>}
             </div>
