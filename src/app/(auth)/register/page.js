@@ -52,7 +52,7 @@ export default function RegisterPage() {
             <h2><span className="font-heading font-bold text-primary text-4xl">Qurbani</span> <span className="text-green-600 font-bold text-4xl">Hat</span></h2>
           </Link>
           <h1 className="text-xl font-bold text-gray-900 mt-4">Create an account</h1>
-          <p className="text-sm text-gray-500 mt-1">Join thousands of happy customers</p>
+          <p className="text-sm text-gray-500 mt-1">Get the best for sacrifice</p>
         </div>
 
         <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-8">
