@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
-import MainLayout from "@/components/layout/MainLayout";
+import MainLayout from "@/components/shared/MainLayout";
 import { useSession } from "@/lib/auth-client";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";

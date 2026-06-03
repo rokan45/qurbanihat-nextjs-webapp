@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import AnimalCard from "@/components/ui/AnimalCard";
+import AnimalCard from "@/components/cards/AnimalCard";
 import { ArrowUpDown, Search } from "lucide-react";
-import MainLayout from "../../components/layout/MainLayout";
+import MainLayout from "../../components/shared/MainLayout";
 
 export default function AnimalsPage() {
   const [animals, setAnimals] = useState([]);

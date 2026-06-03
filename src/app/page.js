@@ -1,6 +1,6 @@
 import Link from "next/link";
-import MainLayout from "@/components/layout/MainLayout";
-import AnimalCard from "@/components/ui/AnimalCard";
+import MainLayout from "@/components/shared/MainLayout";
+import AnimalCard from "@/components/cards/AnimalCard";
 import { CheckCircle, Truck, ShieldCheck, Star } from "lucide-react";
 
 async function getAnimals() {

@@ -3,7 +3,7 @@
 import { useSession, signOut } from "@/lib/auth-client";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import MainLayout from "@/components/layout/MainLayout";
+import MainLayout from "@/components/shared/MainLayout";
 import { User, Mail, Edit, LogOut } from "lucide-react";
 import { useEffect } from "react";
 

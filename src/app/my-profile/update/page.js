@@ -3,7 +3,7 @@
 import { useSession, authClient } from "@/lib/auth-client";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
-import MainLayout from "@/components/layout/MainLayout";
+import MainLayout from "@/components/shared/MainLayout";
 import toast from "react-hot-toast";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";

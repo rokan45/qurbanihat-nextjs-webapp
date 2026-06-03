@@ -1,5 +1,5 @@
 import Link from "next/link";
-import MainLayout from "../components/layout/MainLayout";
+import MainLayout from "../../components/shared/MainLayout";
 
 export default function NotFound() {
   return (
