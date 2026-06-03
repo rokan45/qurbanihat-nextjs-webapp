@@ -18,12 +18,12 @@ export default async function HomePage() {
       <section className="relative bg-gradient-to-br from-primary-dark via-primary to-primary-light text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
           <div className="max-w-2xl">
-            <span className="inline-block text-xs font-semibold bg-accent/20 text-accent border border-accent/30 px-3 py-1 rounded-full mb-5 uppercase tracking-wider">
+            <span className="inline-block text-xs font-semibold bg-accent/20 text-[#FFF0E4] border border-accent/30 px-3 py-1 rounded-full mb-5 uppercase tracking-wider">
               Eid ul-Adha Special
             </span>
             <h1 className="font-heading text-4xl md:text-5xl font-bold leading-tight mb-5">
               Book Your Qurbani <br />
-              <span className="text-accent">Animal Online</span>
+              <span className="text-[#FFF0E4]">Animal Online</span>
             </h1>
             <p className="text-green-100 text-base md:text-lg leading-relaxed mb-8 max-w-xl">
               Find healthy cows, goats and more from verified sellers across Bangladesh. Safe, simple, and trusted.
@@ -31,7 +31,7 @@ export default async function HomePage() {
             <div className="flex flex-wrap gap-3">
               <Link
                 href="/animals"
-                className="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 rounded-md font-medium hover:bg-accent-dark transition-colors"
+                className="inline-flex items-center gap-2 bg-[#2FA084] text-white px-6 py-3 rounded-md font-medium hover:bg-accent-dark transition-colors"
               >
                 Browse Animals
               </Link>
@@ -45,13 +45,13 @@ export default async function HomePage() {
           </div>
         </div>
         {/* Decorative */}
-        <div className="absolute right-0 top-0 w-1/3 h-full opacity-10 hidden lg:block">
+        {/* <div className="absolute right-0 top-0 w-1/3 h-full opacity-10 hidden lg:block">
           <div className="text-[20rem] leading-none select-none text-right pr-8 pt-4">🐄</div>
-        </div>
+        </div> */}
       </section>
 
       {/* Stats bar */}
-      <section className="bg-accent">
+      <section className="bg-[#2FA084]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-amber-600">
             {[

@@ -33,7 +33,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <h2><span className="font-heading font-bold text-primary text-2xl">Qurbani</span> <span className="text-green-600 font-bold text-2xl">Hat</span></h2>
+            <h2><span className="font-heading font-bold text-white text-2xl">Qurbani</span> <span className="text-green-600 font-bold text-2xl">Hat</span></h2>
           </Link>
 
           {/* Desktop Nav */}
