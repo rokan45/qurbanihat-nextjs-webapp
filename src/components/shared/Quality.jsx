@@ -1,3 +1,4 @@
+import { CheckCircle, ShieldCheck, Star } from 'lucide-react';
 import React from 'react';
 
 const Quality = () => {
