@@ -23,7 +23,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2 text-green-200">
                 <MapPin size={15} className="shrink-0 text-accent" />
-                123 Farmgate, Dhaka-1215, Bangladesh
+                Sherpur, Bogura, Bangladesh
               </li>
               <li className="flex items-center gap-2 text-green-200">
                 <Phone size={15} className="shrink-0 text-accent" />
@@ -59,7 +59,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-green-800 mt-10 pt-6 text-center text-sm text-green-400">
-          © {new Date().getFullYear()} QurbaniHat. All rights reserved. Made with ❤️ in Bangladesh.
+          © {new Date().getFullYear()} QurbaniHat. All rights reserved.
         </div>
       </div>
     </footer>
