@@ -83,13 +83,13 @@ export default function UpdateProfilePage() {
 
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
-                Photo URL <span className="text-gray-400 font-normal">(optional)</span>
+                Photo URL 
               </label>
               <input
                 type="url"
                 {...register("image")}
                 className="input-field"
-                placeholder="https://example.com/photo.jpg"
+                placeholder="example.com/photo.jpg"
               />
               <p className="text-xs text-gray-400 mt-1">Enter a direct link to your profile photo</p>
             </div>
