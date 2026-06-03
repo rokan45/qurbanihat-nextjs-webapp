@@ -17,7 +17,7 @@ export default async function HomePage() {
 
   return (
     <MainLayout>
-      {/* Hero */}
+      {/* Banner  Section */}
       <section className="relative bg-gradient-to-br from-primary-dark via-primary to-primary-light text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
           <div className="max-w-2xl">
@@ -47,10 +47,7 @@ export default async function HomePage() {
             </div>
           </div>
         </div>
-        {/* Decorative */}
-        {/* <div className="absolute right-0 top-0 w-1/3 h-full opacity-10 hidden lg:block">
-          <div className="text-[20rem] leading-none select-none text-right pr-8 pt-4">🐄</div>
-        </div> */}
+        
       </section>
 
       {/* Stats bar */}
@@ -97,7 +94,7 @@ export default async function HomePage() {
       <TopBreads />
 
       {/* Why choose us */}
-      <Quality/>
+      <Quality />
     </MainLayout>
   );
 }

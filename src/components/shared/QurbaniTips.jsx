@@ -1,3 +1,4 @@
+import { CheckCircle, ShieldCheck, Truck } from 'lucide-react';
 import React from 'react';
 
 const QurbaniTips = () => {
